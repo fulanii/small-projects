@@ -1,0 +1,30 @@
+# name: CI/CD Pipeline
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Check out the repository
+#       uses: actions/checkout@v2
+
+#     - name: Deploy to Production Server
+#       env:
+#         HOST: ${{ secrets.PRODUCTION_HOST }}
+#         USERNAME: ${{ secrets.PRODUCTION_USER }}
+#         PASSWORD: ${{ secrets.PRODUCTION_PASSWORD }}
+
+#       run: |
+#         sshpass -p "$PASSWORD" ssh -o StrictHostKeyChecking=no $USERNAME@$HOST "
+#         cd /home/portfolio_website &&
+#         git pull origin main &&
+#         pip install -r requirements.txt &&
+#         python manage.py collectstatic --noinput &&
+#         python manage.py migrate &&
+#         sudo systemctl restart gunicorn
+#         "
