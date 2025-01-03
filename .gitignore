@@ -1,2 +1,13 @@
 .Ds_store
 **/__pycache__/
+**/*.pyc
+**/.vscode/
+**/.idea/
+**/venv/
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+**/package-lock.json
+**/.env
+celerybeat-schedule
