@@ -4,3 +4,4 @@ A repo where i will be hosting small project, tutorials and code examples
 - [Unsplash Scraper](./unsplash_scraping/)
 - [Tcbscans One piece Manga Scraper](./manga_scraper/)
 - [Deploying Django with github action](./myproject/)
+- [Schedule Tasks in Python with Celery and Redis.](./blog_redis_celery/)
